@@ -32,7 +32,7 @@ function App() {
       );
 
       if (!response.ok) {
-        throw new Error("Network response was not ok");
+        throw new Error(`HTTP error! status: ${response.status}`);
       }
 
       const data = await response.json();
