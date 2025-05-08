@@ -26,8 +26,7 @@ function App() {
     setCocktails([]);
 
     try {
-      const baseUrl =
-        "https://cors-anywhere.herokuapp.com/https://www.thecocktaildb.com/api/json/v1/1";
+      const baseUrl = "https://www.thecocktaildb.com/api/json/v1/1";
       const response = await fetch(
         `${baseUrl}/filter.php?i=${encodeURIComponent(ingredient)}`
       );
